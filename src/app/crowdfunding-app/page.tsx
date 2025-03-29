@@ -302,9 +302,14 @@ const Page = () => {
     <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center">
       <div className="w-xl max-sm:w-full max-sm:px-12 flex flex-col items-center">
         <GoToHomePage />
-        <span className="relative text-3xl font-bold mb-8">
-          Fund Me App
-        </span>
+        <div className="flex flex-col items-center justify-center mb-8">
+          <span className="relative text-3xl font-bold">
+            Crowdfunding App
+          </span>
+          <span className="text-sm text-gray-500">
+            using Ether.js
+          </span>
+        </div>
         <main>
           {!isConnected ? (
             <div className="flex flex-col items-center justify-center">
@@ -345,7 +350,7 @@ const Page = () => {
                     {minimumUsd && (
                       <p className="text-sm text-center text-gray-400">
                         Minimum funding amount: {minimumUsd}{" "}
-                        ETH
+                        USD
                       </p>
                     )}
                     <Input

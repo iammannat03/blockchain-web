@@ -14,9 +14,10 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Ethereum Wallet",
-    description: "A wallet for Ethereum blockchain.",
-    link: "/ethereum-wallet",
+    title: "Crowdfunding App",
+    description:
+      "A crowdfunding app for Ethereum blockchain(Ethers.js).",
+    link: "/crowdfunding-app",
   },
 
   // ... Add more projects as needed
